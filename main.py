@@ -164,7 +164,7 @@ class PythonQuizApp(App):
         your_answer = '[b]Your answer{}[/b]\n  {}'.format(self.is_are(len(self.your_answer) == 1), '\n  '.join(self.your_answer)) if self.your_answer else 'Missed'
         correct_answer = '[b]The correct answer{}[/b]\n  {}'.format(self.is_are(self.type == 'singleChoice'), '\n  '.join(self.correct_answer))
 
-        top = f'{self.question}\n\n[size={int(sp(18))}]{self.code}[/size]' if self.code else self.question
+        top = f'{self.question}\n\n[size={int(sp(16))}]{self.code}[/size]' if self.code else self.question
         bottom = f'{your_answer}\n\n{correct_answer}'
 
         scroll_container.add_widget(Factory.SColoredDynamicLabel(text=top))
