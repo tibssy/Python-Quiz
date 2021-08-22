@@ -178,16 +178,17 @@ class PythonQuizApp(App):
         Animation.cancel_all(self)
         time_taken = self.duration - self.timer
         grade = int(self.score / self.number_of_question * 100)
+        incorrect_len = len(self.root.ids.scrll_grd.children)
 
         self.root.ids.sm.transition.mode = 'push'
         self.root.ids.sm.transition.direction = 'up'
         self.root.ids.sm.current = 'report_screen'
 
-        self.root.ids.tm_lbl.text = f'Time taken:\n[b]{int(time_taken // 60):02d}:{int(time_taken % 60):02d}[/b]' if self.timer else 'timeout'
+        self.root.ids.tm_lbl.text = f'Time taken:\n[b]{int(time_taken // 60):02d}:{int(time_taken % 60):02d}[/b]' if self.timer else '[b]Timeout[/b]'
         self.root.ids.num_lbl.text = f'Marks:\n[b]{round(self.score, 2) if self.score % 1 else int(self.score)}/{self.number_of_question}[/b]'
         self.root.ids.grd_lbl.text = f'{grade}%'
         self.root.ids.rslt_lbl.text = '[b][color=00ff00]PASS[/color][/b]' if grade >= 80 else '[b][color=ff0000]FAIL[/color][/b]'
-        self.root.ids.hdr_lbl.text = f'Incorrect Answers: [b]{len(self.root.ids.scrll_grd.children)}[/b]'
+        self.root.ids.hdr_lbl.text = f'Incorrect: [b]{incorrect_len}[/b]' if incorrect_len else ''
 
 
     def on_start(self):
