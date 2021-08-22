@@ -1,0 +1,291 @@
+#:import CardTransition kivy.uix.screenmanager.CardTransition
+
+
+<ColoredGrid@GridLayout>
+    bg_color: 0,0,0,1
+    padding: [30, 10, 30, 30]
+    canvas.before:
+        Color:
+            rgba: self.bg_color
+        Rectangle:
+            size: self.size
+            pos: self.pos
+
+<PrimaryButton@Button>
+    font_size: sp(32)
+    color: app.primary_color
+    background_color: 0,0,0,0
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: app.secondary_color if self.state == 'normal' else app.quaternary_color
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10]
+
+<SecondaryButton@Button>
+    font_size: sp(32)
+    color: app.secondary_color
+    background_color: 0,0,0,0
+    background_normal: ''
+    canvas.before:
+        Color:
+            rgba: app.primary_color if self.state == 'normal' else app.tertiary_color
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10]
+
+<CenteredLabel@Label>:
+    color: app.secondary_color
+    text_size: self.size
+    halign: 'center'
+    valign: 'middle'
+    font_size: sp(28)
+
+<UpDownBtn@GridLayout>
+    cols: 2
+    spacing: 20
+    func: None
+    value: None
+
+    PrimaryButton:
+        text: '-'
+        on_release: app.set_button(root.func, -root.value)
+
+    PrimaryButton:
+        text: '+'
+        on_release: app.set_button(root.func, root.value)
+
+<DynamicGrid@GridLayout>
+    cols: 1
+    size_hint_y: None
+    height: self.minimum_height
+
+<DynamicLabel@Label>
+    font_size: sp(26)
+    color: app.primary_color
+    padding_x: 20
+    padding_y: 10
+    size_hint: 1, None
+    text_size: self.width, None
+    halign: 'left'
+    height: self.texture_size[1]
+
+<SColoredDynamicLabel@DynamicLabel>
+    padding_y: 20
+    markup: True
+    font_size: sp(20)
+    canvas.before:
+        Color:
+            rgba: app.secondary_color
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [10,10,0,0]
+
+<QColoredDynamicLabel@DynamicLabel>
+    padding_y: 20
+    markup: True
+    font_size: sp(18)
+    color: app.tertiary_color
+    canvas.before:
+        Color:
+            rgba: app.quaternary_color
+        RoundedRectangle:
+            size: self.size
+            pos: self.pos
+            radius: [0,0,10,10]
+
+<CCheckBox@CheckBox>
+    size_hint: 0.2, 1
+    color: 5,1.2,0.7,2
+
+<CLabel@ButtonBehavior+Label>
+    size_hint: 0.8, 1
+    text_size: self.size
+    valign: 'center'
+    color: app.primary_color
+    font_size: sp(18)
+
+<CheckBoxContainer@BoxLayout>
+    text: ''
+    group: None
+
+    CCheckBox:
+        id: c_chkbx
+        group: root.group
+        on_active: app.checkbox_checked(self, c_chkbx.active, root.ids.c_lbl.text)
+
+    CLabel:
+        id: c_lbl
+        on_press: c_chkbx._do_press()
+        text: root.text
+
+
+<ContainerScreen>:
+    name: 'ScreenManager'
+
+    BoxLayout:
+        orientation: 'vertical'
+
+        ColoredGrid:
+            cols: 2
+            size_hint: 1, 0.08
+            padding: [30,0,30,0]
+            bg_color: app.primary_color
+            CenteredLabel:
+                id: num_lbl
+                markup: True
+                text: f'Questions:\n[b]{app.number_of_question}[/b]'
+            CenteredLabel:
+                id: tm_lbl
+                markup: True
+                text: 'Timer:\n[b]40:00[/b]'
+
+        ScreenManager:
+            id: sm
+            size_hint: 1, 0.92
+            transition: CardTransition()
+
+            MainScreen:
+
+            Screen:
+                name: 'quiz_screen'
+
+                ColoredGrid:
+                    rows: 2
+                    bg_color: app.secondary_color
+
+                    GridLayout:
+                        id: quiz_area
+                        cols: 1
+                        size_hint: 1, 0.93
+
+                        DynamicLabel:
+                            id: qstn_lbl
+
+                        DynamicLabel:
+                            id: cd_lbl
+                            font_size: sp(18)
+                        GridLayout:
+                            id: opt_cntnr
+                            cols: 1
+                            padding: [20,0,20,0]
+
+                    SecondaryButton:
+                        id: next_qstn
+                        size_hint: 1, 0.07
+                        on_release:
+                            app.rating()
+                            app.question_picker()
+
+            Screen:
+                name: "report_screen"
+
+                ColoredGrid:
+                    cols: 1
+                    bg_color: app.primary_color
+
+                    GridLayout:
+                        cols: 2
+                        size_hint: 1, 0.1
+
+                        CenteredLabel:
+                            text: 'Grade to pass:'
+
+                        CenteredLabel:
+                            text: '80%'
+                            bold: True
+
+                        CenteredLabel:
+                            text: 'Grade:'
+
+                        CenteredLabel:
+                            id: grd_lbl
+                            bold: True
+
+                    CenteredLabel:
+                        id: rslt_lbl
+                        size_hint: 1, 0.1
+                        markup: True
+                        font_size: sp(42)
+
+                    CenteredLabel:
+                        id: hdr_lbl
+                        size_hint: 1, 0.05
+                        markup: True
+
+                    ScrollView:
+                        size_hint: 1, 0.65
+                        do_scroll_x: False
+                        do_scroll_y: True
+                        bar_width: 0
+
+                        GridLayout:
+                            id: scrll_grd
+                            cols: 1
+                            spacing: 30
+                            size_hint: 1, None
+                            height: self.minimum_height
+
+                    Label:
+                        size_hint: 1, 0.03
+
+                    PrimaryButton:
+                        size_hint: 1, 0.07
+                        text: "Re-take"
+                        on_release:
+                            app.reset_app()
+                            sm.transition.mode = 'pop'
+                            sm.transition.direction = 'down'
+                            sm.current = 'main_screen'
+
+<MainScreen>:
+    name: "main_screen"
+
+    ColoredGrid:
+        cols: 1
+        bg_color: app.primary_color
+
+        CenteredLabel:
+            size_hint: 1, 0.3
+            font_size: sp(36)
+            bold: True
+            text: f'Introduction to Programming\nUsing Python\n98-381\n({len(app.data)})'
+
+        Image:
+            size_hint: 1, 0.2
+            source: 'icon.png'
+            size: self.texture_size
+
+        CenteredLabel:
+            size_hint: 1, 0.1
+            text: 'Set The Number Of Questions'
+
+        UpDownBtn:
+            func: 1
+            value: 1
+            size_hint: 1, 0.07
+
+        CenteredLabel:
+            size_hint: 1, 0.1
+            text: 'Set Timer'
+
+        UpDownBtn:
+            func: 0
+            value: 60
+            size_hint: 1, 0.07
+
+        Label:
+            size_hint: 1, 0.09
+
+        PrimaryButton:
+            size_hint: 1, 0.07
+            text: "Let's Start"
+            on_release:
+                app.start_quiz()
+                root.parent.transition.mode = 'pop'
+                root.parent.transition.direction = 'down'
+                root.parent.current = 'quiz_screen'

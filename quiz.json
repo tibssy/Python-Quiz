@@ -1,0 +1,1341 @@
+[
+    {
+        "type": "multipleChoice",
+        "question": "Which is true of variables? Choose three answers.",
+        "code": "",
+        "options": [
+            "Variables cannot have spaces in their names",
+            "Variables must include punctuation marks to signify new words",
+            "Variables cannot begin with a number",
+            "Variables are case-sensitive",
+            "Variables must include at least one number"
+        ],
+        "answer": [
+            "Variables cannot have spaces in their names",
+            "Variables are case-sensitive",
+            "Variables cannot begin with a number"
+        ]
+    },
+    {
+        "type": "multipleChoice",
+        "question": "Which of these words are used with compound conditional expressions? (Choose all that apply.)",
+        "code": "",
+        "options": [
+            "AND",
+            "NOT",
+            "OR",
+            "WITH",
+            "USE"
+        ],
+        "answer": [
+            "OR",
+            "NOT",
+            "AND"
+        ]
+    },
+    {
+        "type": "multipleChoice",
+        "question": "Which are the two most standard ways that programmers receive input from users, through an app?",
+        "code": "",
+        "options": [
+            "Via email",
+            "Through instant messaging",
+            "Via a console",
+            "Through filling out a form"
+        ],
+        "answer": [
+            "Through filling out a form",
+            "Via a console"
+        ]
+    },
+    {
+        "type": "multipleChoice",
+        "question": "Which are three of the modes that can act as one of the arguments in an open function?",
+        "code": "",
+        "options": [
+            "Read (r)",
+            "Search (s)",
+            "Binary (b)",
+            "Write (w)",
+            "Amend (am)"
+        ],
+        "answer": [
+            "Read (r)",
+            "Write (w)",
+            "Binary (b)"
+        ]
+    },
+    {
+        "type": "multipleChoice",
+        "question": "Which are two occurrences that would cause a file to close improperly? ",
+        "code": "",
+        "options": [
+            "The close() statement is forgotten",
+            "The program is designed to close unexpectedly",
+            "The program crashes due to an error while running",
+            "The file was opened improperly"
+        ],
+        "answer": [
+            "The close() statement is forgotten",
+            "The program crashes due to an error while running"
+        ]
+    },
+    {
+        "type": "multipleChoice",
+        "question": "What often causes syntax errors? Choose two answers. ",
+        "code": "",
+        "options": [
+            "Coding from memory",
+            "Using something where is does not fit according to the rules of writing Python",
+            "A missing colon beginning a block",
+            "Incorrect numbers"
+        ],
+        "answer": [
+            "A missing colon beginning a block",
+            "Using something where is does not fit according to the rules of writing Python"
+        ]
+    },
+    {
+        "type": "multipleChoice",
+        "question": "Which of the following could be a variable? ",
+        "code": "",
+        "options": [
+            "yield",
+            "4miles",
+            "time@4",
+            "time 4",
+            "time",
+            "finally"
+        ],
+        "answer": [
+            "time"
+        ]
+    },
+    {
+        "type": "multipleChoice",
+        "question": "Which are the two possible outputs of this program if the user enters '1'? (Choose 2 answers.)",
+        "code": "import random\n\nuser_choice = input(\"Pick 1 for heads or 2 for tails: \")\ndecider = random.randrange(2)\n\nif decider == 0:\n        print(\"HEADS\")\nelse:\n        print(\"TAILS\")\n\nnum = eval(user_choice)\nif num == decider:\n        print(\"Well done!\")\nelse:\n        print(\"Bad Luck!\")",
+        "options": [
+            "HEADS Well done!",
+            "TAILS Well done!",
+            "HEADS Bad Luck!",
+            "TAILS Bad Luck!"
+        ],
+        "answer": [
+            "HEADS Bad Luck!",
+            "TAILS Well done!"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which type of variable (data type) uses decimals?",
+        "code": "",
+        "options": [
+            "Integer",
+            "Boolean",
+            "String",
+            "Float"
+        ],
+        "answer": [
+            "Float"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which comparison operator asks whether one value is equal to another?",
+        "code": "",
+        "options": [
+            "=",
+            "/=",
+            ">=",
+            "<=",
+            "=="
+        ],
+        "answer": [
+            "=="
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which symbol represents multiplication in arithmetic operators?",
+        "code": "",
+        "options": [
+            "*",
+            ".",
+            "+",
+            "x",
+            "/"
+        ],
+        "answer": [
+            "*"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which first name variable is an example of camel casing?",
+        "code": "",
+        "options": [
+            "first Name",
+            "first_name",
+            "firstname",
+            "firstName",
+            "first.name"
+        ],
+        "answer": [
+            "firstName"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is the symbol that can concatenate appropriate variables in Python programming?",
+        "code": "",
+        "options": [
+            "*",
+            ",",
+            "+",
+            "&",
+            "@"
+        ],
+        "answer": [
+            "+"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code:",
+        "code": "north = 200\nsouth = 300\nnorthwins = north > south\nsouthwins = south > north\nprint(\"Northwins =\", northwins, \"Southwins = \", southwins)\n\nWhich type of data is displayed along with the string literals\nin the print statement?",
+        "options": [
+            "Booleen",
+            "Tuple",
+            "String",
+            "Integer",
+            "Float"
+        ],
+        "answer": [
+            "Booleen"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code:",
+        "code": "price = 3.95\nwidgets = 5\nprint(\"The price of the widget is \", price)\nprint(\"We have \" + widgets + \" in stock.\")\n\nWhich built-in function should be wrapped around\nthe variable 'widgets', to cast it into a string variable?",
+        "options": [
+            "str",
+            "string",
+            "stringtype",
+            "cast/str"
+        ],
+        "answer": [
+            "str"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the code below, which number will the price variable show on the last line?",
+        "code": "price = 3.95\nwidgets = 5\nprint(\"The price of the widget is \", price)\nprint(\"We have \" + str(widgets) + \" in stock\")\nprint(price * widgets)\nprint(int(price), float(widgets))",
+        "options": [
+            "3",
+            "5",
+            "3.95",
+            "4"
+        ],
+        "answer": [
+            "3"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Is the following statement true or false? The term list is a data type (variable) which stores multiple values.",
+        "code": "",
+        "options": [
+            "true",
+            "false"
+        ],
+        "answer": [
+            "true"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, which number is item East in the displayed list?",
+        "code": "regions = [\"North\", \"South\", \"East\", West\"]\nsales = [30000, 20000, 40000, 35000]\nemployees = [\"Alice\", \"Vera\", \"Flo\", \"Mel\"]\n\nprint(\"Region: \", regions[0], \"Sales: \", sales[0])",
+        "options": [
+            "2",
+            "3",
+            "1",
+            "4"
+        ],
+        "answer": [
+            "2"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, which region and sales will come up based upon the print statement displayed on line 6?",
+        "code": "regions = [\"North\", \"South\", \"East\", \"West\"]\nsales = [30000, 20000, 40000, 35000]\nemployees = [\"Alice\", \"Vera\", \"Flo\", \"Mel\"]\n\nprint(\"Region: \", regions[0], \"Sales: \", sales[0])\nprint(\"Region: \", regions[-1], \"Sales: \", sales[-1])",
+        "options": [
+            "Region: East Sales: 40000",
+            "A syntax error will occur",
+            "Region: South Sales: 20000",
+            "Region: North Sales: 30000",
+            "Region: West Sales: 35000",
+            "A runtime error will occur"
+        ],
+        "answer": [
+            "Region: West Sales: 35000"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, which number will be shown when the sales variable is run in a print statement?",
+        "code": "region = \"North\"\nfirstName = \"Tony\"\n\nsales = 30000\nserialNumber = \"53235\"\n\nitemsRecieved = False\nsales = 32000\nitemsOrdered = [\"Snowblower\", \"Skies\", \"Chapstick\"]\n\nprint(sales)",
+        "options": [
+            "30001",
+            "False",
+            "53235",
+            "30000",
+            "32000"
+        ],
+        "answer": [
+            "32000"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the output of the following code?",
+        "code": "print(17 / 4, 17 % 4)",
+        "options": [
+            "4, 3",
+            "4.25 1",
+            "4.25",
+            "4 1",
+            "5 1"
+        ],
+        "answer": [
+            "4.25 1"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Python will read quotes inside of quotes. If the outside quotation marks are single, the inside quotation marks need to be ______.",
+        "code": "",
+        "options": [
+            "Used sparingly",
+            "double",
+            "Semicolons",
+            "single"
+        ],
+        "answer": [
+            "double"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is a characteristic of an if statement?",
+        "code": "",
+        "options": [
+            "Run a block code based on if a condition is true or false",
+            "Exits a loop and runs code",
+            "A counter controls if an if statement block will run.",
+            "Set to run a set number of times"
+        ],
+        "answer": [
+            "Run a block code based on if a condition is true or false"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which best defines the purpose of an else statement?",
+        "code": "",
+        "options": [
+            "Used in case there are no if or elif statements that are true",
+            "Used to control if and elif statements",
+            "Used in case there are no if or elif statements that are false",
+            "Used to override if and elif statements"
+        ],
+        "answer": [
+            "Used in case there are no if or elif statements that are true"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which best defines a for loop?",
+        "code": "",
+        "options": [
+            "A loop that is set to run for one instance",
+            "A loop that is always on",
+            "A loop that is set to run a certain number of times",
+            "A loop that is set to run until an event occurs",
+            "A loop that is set to run forever"
+        ],
+        "answer": [
+            "A loop that is set to run a certain number of times"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Nested loops are ______ inside of ______.",
+        "code": "",
+        "options": [
+            "loops, compounds",
+            "compounds, compounds",
+            "loops, loops",
+            "compounds, loops"
+        ],
+        "answer": [
+            "loops, loops"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Choose the correct form of the if statement, which fits into the blank line in the code sample, in order to return the print statements shown for customers who have annual sales of at least 500,000.",
+        "code": "annual_sales = 600000\n________________\n        print(\"Gold custumer\")\n        print(\"Thank you for your business\")",
+        "options": [
+            "if annual_sales >= 500000:",
+            "if annualSales >= 50000:",
+            "if = 500000:",
+            "if >= 500000:",
+            "if annual_sales = 500000:"
+        ],
+        "answer": [
+            "if annual_sales >= 500000:"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, which code bit is the first to cause these if and elif statements to malfunction?",
+        "code": "annual_sales = 300000\nif annual_sales >= 100000\n        print(\"Bronze Customer\")\nelif annual_sales >= 300000:\n        print(\"Silver Customer\")\nelif annual_sales >= 500000:\n        print(\"Gold Customer\")\nprint(\"Thank you for your business\")",
+        "options": [
+            "if annual_sales >= 100000",
+            "annual_sales = 300000",
+            "print(\"Bronze Customer\")",
+            "elif annual_sales >= 300000:"
+        ],
+        "answer": [
+            "if annual_sales >= 100000"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Put the following bits of code in the correct order, replacing the marked blank spaces, in order to apply a nested statement where any silver customer from the North will receive a snowboard, and any other silver customers will receive a baseball bat.",
+        "code": "annual_sales = 300000\nregion = \"North\"\nif annual_sales >= 500000:\n        print(\"Gold Customer\")\nelif annual_sales >= 300000:\n        print(\"Silver Customer\")\n        #1________________\n                print(\"Send a snowboard\")\n        else:\n                #2________________\nelif annual_sales >= 100000:\n        print(\"Bronze Customer\")\nprint(\"Thank you for your business\")",
+        "options": [
+            "1: print(\"Send a baseball bat\")\n2: if region == \"North\":",
+            "1: if region == \"North\":\n2: print(\"Send a baseball bat\")"
+        ],
+        "answer": [
+            "1: if region == \"North\":\n2: print(\"Send a baseball bat\")"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, which word should be placed in the blank space in order for the nested conditional to print \"Bronze Customer and first-time prize winner\"?",
+        "code": "annual_sales = 200000\nnew_customer = ________________\n\nif annual_sales >= 500000:\n        print(\"Gold Customer\")\nelif annual_sales >= 300000:\n        print(\"Silver Customer\")\nelif annual_sales >= 10000 and new_customer:\n        print(\"Bronze Customer and first-time prize winner\")\nelif annual_sales >= 100000:\n        print(\"Bronze Customer\")\nprint(\"Thank you for your business\")",
+        "options": [
+            "0",
+            "True",
+            "Yes",
+            "False",
+            "No"
+        ],
+        "answer": [
+            "True"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which entry should replace the blank area in order to correctly and logically set up the for loop to cover every month of the year?",
+        "code": "initial_sales_goal = 20000\nmultiplier = 100\nfor monthly_goal in range(________):\n        monthly_sales_goal = initial_sales_goal * (monthly_goal + multiplier)\n        print(\"Your sales goal for month \" + str(monthly_goal) +\" is \" + str(monthly_sales_goal))\nprint(\"Good luck with your goals\")",
+        "options": [
+            "1, 12",
+            "1, 13",
+            "0, 12",
+            "12"
+        ],
+        "answer": [
+            "1, 13"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, which entry should replace the blank area in order to correctly set up a break statement?",
+        "code": "capital_guess = input(\"What is the capital of Ireland?\")\nnumber_of_guesses = 1\n\nwhile capital_guess != \"Dublin\":\n        number_of_guesses = number_of_guesses + 1\n        if number_of_guesses > 3:\n                print(\"You guessed incorrectly three times. Game over.\")\n                ________________\n        capital_guess = input(\"Guess again. \")\nif number_of_guesses <= 3:\n        print(\"You guessed it. Dublin is the capital of Ireland.\")",
+        "options": [
+            "break loop",
+            "break while loop",
+            "break end",
+            "break"
+        ],
+        "answer": [
+            "break"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, which entry should be in the blank area in order to properly implement the pass keyword?",
+        "code": "annual_sales = 200000\n\nif annual_sales >= 500000:\n        print(\"Gold Customer\")\nelif annual_sales >= 300000:\n        print(\"Silver Customer\")\nelif annual_sales >= 100000:\n        ________________\n\nprint(\"Thank you for your business\")",
+        "options": [
+            "pass",
+            "pass keyword",
+            "pass statement",
+            "begin pass"
+        ],
+        "answer": [
+            "pass"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Python has the ability to store data in binary files or text files such as value files.",
+        "code": "",
+        "options": [
+            "comma-separated",
+            "secured",
+            "hidden",
+            "numbered"
+        ],
+        "answer": [
+            "comma-separated"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the name of Python's library?",
+        "code": "",
+        "options": [
+            "sys",
+            "Python standard library",
+            "os",
+            "shelf"
+        ],
+        "answer": [
+            "Python standard library"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the name of Python's module most suited to working with files and directories?",
+        "code": "",
+        "options": [
+            "os",
+            "sys",
+            "py-lib",
+            "library",
+            "file"
+        ],
+        "answer": [
+            "os"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Why are parentheses required at the end of: workFile.close()?",
+        "code": "",
+        "options": [
+            "They are not required",
+            "For the purpose of organising",
+            "Because close is a variable",
+            "Because close() is a method"
+        ],
+        "answer": [
+            "Because close() is a method"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which code will read the second line of a file, and store it in the variable workFileSecondLine?",
+        "code": "",
+        "options": [
+            "workFileFirstLine = workFile.nextline()\nworkFileSecondLine = workFile.nextline()",
+            "workFileFirstLine = workFile.read()\nworkFileSecondLine = workFile.read()",
+            "workFileFirstLine = workFile.readline()\nworkFileSecondLine = workFile.readline()",
+            "workFileSecondLine = workFile.read()"
+        ],
+        "answer": [
+            "workFileFirstLine = workFile.readline()\nworkFileSecondLine = workFile.readline()"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, which type of statement should be added to the blank space to validate data, when a user enters an incorrect value, by keeping the program running?",
+        "code": "# Reading input from console and making sure it works\nlocation = \"\"\n________ location != \"HQ\" and location != \"North\" and location != \"South\":\n        location = input(\"Enter HQ, North, or South for a location.\")\nprint(location)",
+        "options": [
+            "else",
+            "while",
+            "if",
+            "for"
+        ],
+        "answer": [
+            "while"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What letter goes in front of quotation marks to indicate that printed text will be formatted text?",
+        "code": "",
+        "options": [
+            "f",
+            "t",
+            "l",
+            "p"
+        ],
+        "answer": [
+            "f"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which should be typed in Python in order to receive interactive help?",
+        "code": "",
+        "options": [
+            "help(object)",
+            "help",
+            "help()",
+            "help(interactive)"
+        ],
+        "answer": [
+            "help()"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is best practice when using indentation and white space in Python?",
+        "code": "",
+        "options": [
+            "Always use white space",
+            "White space is not important to use with statements",
+            "Make single lines as long as possible",
+            "Anything inside a routine should be indented"
+        ],
+        "answer": [
+            "Anything inside a routine should be indented"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which best defines the Pydoc feature?",
+        "code": "",
+        "options": [
+            "A statement which generates documentation on variables",
+            "A library module which automatically generates documentation on Python modules",
+            "A module which automatically generates documentation on variables",
+            "A statement which automatically generates documentation on Python modules"
+        ],
+        "answer": [
+            "A library module which automatically generates documentation on Python modules"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "The def keyword is used to start a ________ in Python.",
+        "code": "",
+        "options": [
+            "class",
+            "statement",
+            "variable",
+            "function",
+            "GUI"
+        ],
+        "answer": [
+            "function"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, which lines should be indented in order to better present the code, and make it syntactically correct?",
+        "code": "1  region = \"West\"\n2  annual_sales = 500000\n3  first_name = \"Tony\"\n4  if annual_sales >= 500000:\n5  print(\"Gold Customer\")\n6  elif annual >= 300000:\n7  print(\"Silver Customer\")\n8  elif annual_sales >= 100000:\n9  print(\"Bronze Customer\")\n10 print(\"Thank you for your business\")\n11 print(f\"your sales representative is {first_name}, you are in good hands\")",
+        "options": [
+            "4, 6, 8, and 10",
+            "5, 7, 9, and 11",
+            "4, 6, and 8",
+            "5, 7, and 9"
+        ],
+        "answer": [
+            "5, 7, and 9"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "With regard to the following code, which lines contain comments?",
+        "code": "1    # set test variables\n2    region = \"West\"\n3    annual_sales = 500000\n4    first_name = \"Tony\"\n5\n6    # sales logic\n7    if annual_sales >= 500000:\n8            print(\"Gold Customer\")\n9    elif annual_sales >= 300000:\n10         print(\"Silver Customer\")\n11 elif annual_sales >= 100000:\n12         print(\"Bronze Customer\")\n13\n14 print(\"Thank you for your business\")\n15 print(f\"Your sales representive is {first_name}, \" \\\n16 f\" you are in the {region} region, \" \\\n17 f\"and you had {annual_sales} in sales last year. Thanks!\")",
+        "options": [
+            "7, 9, and 11",
+            "16 and 17",
+            "8, 10, and 12",
+            "1 and 6"
+        ],
+        "answer": [
+            "1 and 6"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which term describes the action of managing errors in a way that an app will not crash on a user, and if it does need to stop, a user is informed?",
+        "code": "",
+        "options": [
+            "Exception handling",
+            "Error management",
+            "Exception dealing",
+            "User benefits"
+        ],
+        "answer": [
+            "Exception handling"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "A programmer would like to display a message to users regardless of whether the try block was successful or not. In this case, why should a finally keyword be used instead of an else keyword after the try/except block?",
+        "code": "",
+        "options": [
+            "An else statement will not run if the try block fails",
+            "A finally statement is more efficient than an else statement",
+            "The finally keyword is the last step in successful code",
+            "The else keyword can be used alone in this instance"
+        ],
+        "answer": [
+            "An else statement will not run if the try block fails"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "os.path is used to perform which action?",
+        "code": "",
+        "options": [
+            "Help find files and folders on specific paths",
+            "Display operating pathways",
+            "Run complex routines on known paths",
+            "Configure files on the OS level"
+        ],
+        "answer": [
+            "Help find files and folders on specific paths"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "The sys module is used to perform which function?",
+        "code": "",
+        "options": [
+            "Allows users to log into a system",
+            "Turns the Python system on or off",
+            "Gives the user access to display and process system information",
+            "Gives users access to system configurations"
+        ],
+        "answer": [
+            "Gives the user access to display and process system information"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, which line contains the function used to convert a string into a date?",
+        "code": "1 import datetime\n2 currentDate = datetime.date.today()\n3\n4 strDueDate = input(\"Enter a date in dd/mm/yyyy format:\")\n5 dueDate = datetime.datetime.strptime(strDueDate, \"%d/%m/%Y\").date()\n6\n7 daysLeft = dueDate - currentDate\n8\n9 print(f\"You have {daysLeft} days left to finish your project.\")",
+        "options": [
+            "1",
+            "5",
+            "7",
+            "2",
+            "4",
+            "9"
+        ],
+        "answer": [
+            "5"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which code entry, when used with the random module, can be used to generate a random number between one and ten?",
+        "code": "",
+        "options": [
+            "rand_num = randint(1, 10)",
+            "rand_num = randnum(1, 11)",
+            "rand_num = randint(0, 10)",
+            "rand_num = randint(0, 11)",
+            "rand_num = randNum(1, 11)"
+        ],
+        "answer": [
+            "rand_num = randint(1, 10)"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the value of L3 after you execute all the operations in the following code?",
+        "code": "L1 = ['re']\nL2 = ['mi']\nL3 = ['do']\nL4 = L1 + L2\nL3.extend(L4)\nL3.sort()\ndel(L3[0])\nL3.append(['fa', 'la'])",
+        "options": [
+            "['do', 'mi', ['fa', 'la']]",
+            "['mi', 're', 'fa', 'la']",
+            "['mi', 're' ['fa', 'la']]",
+            "['re', 'mi', ['fa', 'la']]"
+        ],
+        "answer": [
+            "['mi', 're' ['fa', 'la']]"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is the output of the following code?",
+        "code": "a = 100 % 6\nb = 250 % 3\nc = 7\nc += a + b\nprint(c)",
+        "options": [
+            "5",
+            "4",
+            "3",
+            "0",
+            "12"
+        ],
+        "answer": [
+            "12"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is the output of the following code?",
+        "code": "example = \"snow world\"\nexample[3] = 's'\nprint(example)",
+        "options": [
+            "TypeError",
+            "snow world",
+            "snow",
+            "snos world"
+        ],
+        "answer": [
+            "TypeError"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is the output of the following code?",
+        "code": "listX = ['A','B','C','D','E','F']\nlistY = list(listX)\n\nlistY.remove('B')\nlistA = [1,2,3,4,5,6]\nlistB = listA\nlistB.remove(3)\n\nprint(listX, listY, listA, listB)",
+        "options": [
+            "['A','C','D','E','F']['A','C','D','E','F'][1,2,3,4,5,6][1,2,4,5,6]",
+            "['A','B','C','D','E','F']['A','C','D','E','F'][1,2,3,4,5,6][1,2,4,5,6]",
+            "['A','C','D','E','F']['A','C','D','E','F'][1,2,4,5,6][1,2,4,5,6]",
+            "['A','B','C','D','E','F']['A','C','D','E','F'][1,2,4,5,6][1,2,4,5,6]"
+        ],
+        "answer": [
+            "['A','B','C','D','E','F']['A','C','D','E','F'][1,2,4,5,6][1,2,4,5,6]"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is the output when the following code is executed?",
+        "code": "string1 = \"hello\"\nstring2 = \"world\"\nprint(string1[::-1], string2[::2])",
+        "options": [
+            "hello world",
+            "olleh wr",
+            "olleh wrd",
+            "worldolleh"
+        ],
+        "answer": [
+            "olleh wrd"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the value of brunch after you execute all of the operations in the following code?",
+        "code": "L1 = [\"bacon\", \"eggs\"]\nL2 = [\"toast\", \"jam\"]\nbrunch = L1\nL1.append(\"juice\")\nbrunch.extend(L2)",
+        "options": [
+            "['bacon', 'eggs', 'toast', 'jam']",
+            "['bacon', 'eggs', ['toast', 'jam']]",
+            "['bacon', 'eggs', 'juice', 'toast', 'jam']",
+            "['bacon', 'eggs', 'juice', ['toast', 'jam']]"
+        ],
+        "answer": [
+            "['bacon', 'eggs', 'juice', 'toast', 'jam']"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the output when we execute list('hello') and print it?",
+        "code": "listA = list('hello')\nprint(listA)",
+        "options": [
+            "['olleh']",
+            "['hello']",
+            "['h', 'e', 'l', 'l', 'o']",
+            "['llo']"
+        ],
+        "answer": [
+            "['h', 'e', 'l', 'l', 'o']"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What does arithmetical operator //' do?",
+        "code": "",
+        "options": [
+            "division operator with the result being an exact floating point answer.",
+            "Returns the result of the first operand raised to the power of the second operand.",
+            "Will divide the first given number by the second given number and return the remainder of the operation.",
+            "Performs just like the division operator but truncates the result at the decimal point - removing any floating point value."
+        ],
+        "answer": [
+            "Performs just like the division operator but truncates the result at the decimal point - removing any floating point value."
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code:",
+        "code": "a = 100 % 3\nprint(a)\n\nWhat does the above code print?",
+        "options": [
+            "2",
+            "33.3",
+            "1",
+            "33.333333333333",
+            "3"
+        ],
+        "answer": [
+            "1"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is the output of the following code?",
+        "code": "a = \"7\"\nb = 14\nc = int(a) + int(b)\nprint(type(float(c)))",
+        "options": [
+            "714",
+            "<class'str'>",
+            "<class 'int'>",
+            "21.0",
+            "<class 'float'>",
+            "21"
+        ],
+        "answer": [
+            "<class 'float'>"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the outcome from the following, if the user enters 550?",
+        "code": "a = \"happy\"\nb = \"sad\"\n\npay = input(\"How much did you earn this week: \")\nc = a if (int(pay) > 500) else b\n\nprint(c)",
+        "options": [
+            "Happy",
+            "no output",
+            "happy",
+            "sad"
+        ],
+        "answer": [
+            "happy"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "How many times does the following program's loop iterate?",
+        "code": "i = 0\nb = 1\n\nwhile i < 7:\n        print(\"Iteration\", b)\n        b += 1\n        i += 1\n        i -= 2\n        i += 4",
+        "options": [
+            "1",
+            "5",
+            "7",
+            "3",
+            "4",
+            "2"
+        ],
+        "answer": [
+            "3"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the output of the following code?",
+        "code": "x = \"abcdef\"\ni = \"a\"\n\nfor i in x:\n        i = x[:-1]\n        print(i, end = \" \")",
+        "options": [
+            "abcde abcde abcde abcde abcde abcde",
+            "a a a a a a",
+            "none of the mentioned",
+            "a",
+            "i i i i i i"
+        ],
+        "answer": [
+            "abcde abcde abcde abcde abcde abcde"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the output of the following code?",
+        "code": "x = ['ab', 'cd', 'ef']\n\nfor i in x:\n        i.upper()\nprint(x)",
+        "options": [
+            "AB\nCD\nEF",
+            "['AB', 'CD', 'EF']",
+            "None of the other answers mentioned",
+            "[None, None, None]",
+            "ab\n    cd\n    ef",
+            "['ab', 'cd', 'ef']"
+        ],
+        "answer": [
+            "['ab', 'cd', 'ef']"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the value of my_list after the following code is run?",
+        "code": "my_list = [\"life\", \"answer\", 42, 0]\n\nfor thing in my_list:\n        if thing == 0:\n                my_list[thing] = \"universe\"\n        elif thing == 42:\n                my_list[1] = \"everything\"",
+        "options": [
+            "[\"life\", \"everything\", 42, 0]",
+            "[\"life\", \"answer\", 42, 0]",
+            "[\"universe\", \"everything\", 42, 0]",
+            "[\"universe\", \"answer\", 42, 0]"
+        ],
+        "answer": [
+            "[\"universe\", \"everything\", 42, 0]"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What does the following program print out?",
+        "code": "alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']\n\nfor i in range(1, len(alphabet), 2):\n        print(alphabet[i])",
+        "options": [
+            "Every letter of the alphabet on the same line starting with 'b'",
+            "Every second letter one line at a time starting with 'b'",
+            "Every letter of the alphabet one line at a time",
+            "'b','y','z'"
+        ],
+        "answer": [
+            "Every second letter one line at a time starting with 'b'"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is the output from the following code?",
+        "code": "a = 5\nb = 10\nc = not(a < 5) or b != 10\n\nif c:\n        print(\"Hello\", type(c))\nelse:\n        print(\"Goodbye\", type(c))",
+        "options": [
+            "Goodbye <class 'int'>",
+            "Hello <class 'bool'>",
+            "Goodbye <class 'bool'>",
+            "Syntax Error",
+            "Hello <class 'int'>"
+        ],
+        "answer": [
+            "Hello <class 'bool'>"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is the output from the following code?",
+        "code": "x = 'seven {1} {0}'.format(4, 5)\nprint('x is {}'.format(x))\nprint(type(x))",
+        "options": [
+            "x is seven 4 5\n<class 'str'>",
+            "Error",
+            "x is seven 5 4\n<class 'str'>",
+            "x is seven 1 0\n<class 'int'>",
+            "x is seven 5 4\n<class 'int'>",
+            "x is seven 1 0\n<class 'str'>"
+        ],
+        "answer": [
+            "x is seven 5 4\n<class 'str'>"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What does the following code produce?",
+        "code": "a = 'hello'\nb = \"hello\"\nc = \"'hello'\"\nprint(a, b, c)",
+        "options": [
+            "hello, hello, hello",
+            "'hello' 'hello' 'hello'",
+            "hello, hello, 'hello'",
+            "hello hello 'hello'",
+            "\"hello\", \"hello\", \"hello\"",
+            "'hello', \"hello\", \"hello\""
+        ],
+        "answer": [
+            "hello hello 'hello'"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What does the following code print out?",
+        "code": "colours = 'red'\n\ndef my_colour(color):\n        colours = 'My favourite colour is %s.' % color\n        return colours\n\nabc = my_colour('blue')\nprint(abc, 'Global variable: colours = ', colours)",
+        "options": [
+            "My favourite colour is blue. Global variable: colours = red",
+            "My favourite colour is red. Global variable: colours = blue",
+            "My favourite colour is red. Global variable: colours = red",
+            "My favourite colour is blue. Global variable: colours = blue"
+        ],
+        "answer": [
+            "My favourite colour is blue. Global variable: colours = red"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the printed output of the following code?",
+        "code": "def function1(a, b):\n        return function2(a + b)\n\ndef function2(a):\n        b = a * 5\n\nprint(function1(2, 3))",
+        "options": [
+            "syntax error",
+            "15",
+            "runtime error",
+            "3",
+            "None",
+            "2"
+        ],
+        "answer": [
+            "None"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "How many lines of printed output are produced from the following code, within a Python script?",
+        "code": "def add(x, y):\n        return x + y\n\ndef mult(x, y):\n        print(x * y)\n\nadd(1, 2)\nprint(add(2, 3))\nmult(3, 4)\nprint(mult(4, 5))",
+        "options": [
+            "0",
+            "2",
+            "4",
+            "5",
+            "6",
+            "3"
+        ],
+        "answer": [
+            "4"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is the output of the following code?",
+        "code": "def function1(x, y):\n        return function2(x + y)\n\ndef function2(a):\n        return a * 5\n\nprint(function1(2, 3))",
+        "options": [
+            "runtime exception",
+            "syntax error",
+            "None",
+            "2",
+            "25",
+            "5"
+        ],
+        "answer": [
+            "25"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the code:",
+        "code": "def always_sunny(t1, t2):\n        \"\"\" t1, t2 are non empty \"\"\"\n        sun = (\"sunny\", \"sun\")\n        first = t1[0] + t2[0]\n        return (sun[0], first)\n\nWhat does always_sunny( ('cloudy'), ('cold',)) evaluate to?",
+        "options": [
+            "('sunny', 'ccloudy')",
+            "('sunny', 'cloudy')",
+            "('sunny', 'ccold')",
+            "('sunny', 'cc')"
+        ],
+        "answer": [
+            "('sunny', 'ccold')"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What is output when the following code is run?",
+        "code": "def sq(func, x):\n        y = x**2\n        return func(y)\n\ndef f(x):\n        return x**2\n\ncalc = sq(f, 2)\nprint(calc)",
+        "options": [
+            "16",
+            "Runtime exception",
+            "Syntax error",
+            "8",
+            "4"
+        ],
+        "answer": [
+            "16"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What will be the output after the following statements?",
+        "code": "def abc(x):\n        try:\n                print(20 / x)\n        except:\n                print('Not a valid argument', end=' ')\n\nprint(abc(0))",
+        "options": [
+            "Not a valid argument None",
+            "Not a valid argument",
+            "ZeroDivisionError",
+            "NameError"
+        ],
+        "answer": [
+            "Not a valid argument None"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, if the user enters 'twenty' what does the program output?",
+        "code": "try:\n        n = int(input(\"How old are you?\"))\n        percent = round(n * 100/80, 1)\n        print(\"You've gone through\", percent, \"% of your life!\")\nexcept ValueError:\n        print(\"Oops, must enter a number.\")\nexcept ZeroDivisionError:\n        print(\"Division by zero\")\nexcept:\n        print(\"Something went very wrong\")",
+        "options": [
+            "Something went very wrong",
+            "Division by zero",
+            "Oops, must enter a number.",
+            "You've gone through 25.0% of your life!"
+        ],
+        "answer": [
+            "Oops, must enter a number."
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which error occurs when the program performs unexpectedly? For example, when order precedence has not been specified in an expression. The interpreter Tuns the program and does not report an error.",
+        "code": "",
+        "options": [
+            "Syntax Error",
+            "Semantic Error",
+            "Runtime Error"
+        ],
+        "answer": [
+            "Semantic Error"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Given the following code, if the user enters 0' what does the program output?",
+        "code": "try:\n        n = int(input(\"How old are you?\"))\n        percent = round(n * 100/80, 1)\n        print(\"You've gone through\", percent, \"% of your life!\")\nexcept ValueError:\n        print(\"Oops, must enter a number.\")\nexcept ZeroDivisionError:\n        print(\"Division by zero\")\nexcept:\n        print(\"Something went very wrong\")",
+        "options": [
+            "You've gone through 0.0% of your life!",
+            "Oops, must enter a number.",
+            "Something went very wrong",
+            "Division by zero"
+        ],
+        "answer": [
+            "You've gone through 0.0% of your life!"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "With regard to the following code, and error shown when running it, what is the problem?",
+        "code": "a = 3\nfor i in range(len(a)):\n        print(i)\n\nERROR MESSAGE:\nFile \"...\", line 2, in <module>\n        for i in range(len(a)):\n\nTypeError: object of type int has no len()",
+        "options": [
+            "You are not allowed to name an integer with the variable a",
+            "You are not allowed to print the loop variable i",
+            "Range is not allowed to have an expression as it's parameter",
+            "You are not allowed to call len on an integer"
+        ],
+        "answer": [
+            "You are not allowed to call len on an integer"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which does the following code produce?",
+        "code": "a = 'hello\"\nprint(a)",
+        "options": [
+            "A Syntax error",
+            "A Semantic / logical error",
+            "A runtime error",
+            "Runs perfectly"
+        ],
+        "answer": [
+            "A Syntax error"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What does the following statement do?",
+        "code": "import random, sys",
+        "options": [
+            "Imports all the Python keywords",
+            "Imports the random and sys modules",
+            "Syntax error",
+            "Imports the random and sys functions",
+            "Imports the directories named random and sys"
+        ],
+        "answer": [
+            "Imports the random and sys modules"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "What does the following statement do?",
+        "code": "import datetime\n\nprint(datetime.datetime.today())",
+        "options": [
+            "Displays a random time from today's date",
+            "Displays a list of all the hours remaining till midnight",
+            "Displays current date and time",
+            "Displays today's weekday name",
+            "Displays the today's date number within the month"
+        ],
+        "answer": [
+            "Displays current date and time"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is the output of the following code?",
+        "code": "import math\n\nfirst = 8.8\nprint(math.floor(first))\n\nsecond = 3.142\nprint(math.ceil(second))\n\nthird = 'Programming is fun'\n\nprint(second)",
+        "options": [
+            "8\n3.142\nProgramming is fun",
+            "8\n4\n3.142",
+            "8\n4\nProgramming is fun",
+            "3.124\n3.124\n3.124",
+            "8\n3.124\n3.124"
+        ],
+        "answer": [
+            "8\n4\n3.142"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Select the correct syntax of the missing else statement body, given the code sample, in order to complete the code:",
+        "code": "annual_sales = 300000\nif annual_sales >= 500000:\n        print('Gold Customer')\nelif annual_sales >= 300000:\n        print('Silver Customer')\nelif annual_sales >= 100000:\n        print('Bronze Customer')\nelse:\n        ________________\n\nprint('Thank you for your business')",
+        "options": [
+            "says(\"You're an up and coming customer\")",
+            "print('You're an up and coming customer')",
+            "say(\"You're an up and coming customer\")",
+            "print(\"You're an up and coming customer\")"
+        ],
+        "answer": [
+            "print(\"You're an up and coming customer\")"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "In an IDE, every syntax error is displayed with a red squiggly line beneath the flawed code. True or false? ",
+        "code": "",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": [
+            "False"
+        ]
+    },
+    {
+        "type": "multipleChoice",
+        "question": "Given the following code, how would you fix the errors generated? (Select all that apply.)",
+        "code": "1    annual_sales = 200000\n2    new_customer = false\n3\n4    if annual_sales >= 500000:\n5    print(\"Gold Customer\")\n6    elif annual_sales >= 300000:\n7            print(\"Silver Customer\")\n8    elif annual_sales >= 100000 and new_customer:\n9            print(\"Bronze Customer and first-time prize winner!\")\n10  elif annual_sales >= 100000\n11          print(\"Bronze Customer\")\n12  print(\"Thank you for your business\")",
+        "options": [
+            "Line 10 should end with a colon ':'",
+            "All statements, other than the start of a decision construct, should en in a semi-colon ';'",
+            "Properly indent the print statement on line 12",
+            "Make the value assigned on line 2 start with capital 'F' for False",
+            "Properly indent the print statement on line 5"
+        ],
+        "answer": [
+            "Line 10 should end with a colon ':'",
+            "Make the value assigned on line 2 start with capital 'F' for False",
+            "Properly indent the print statement on line 5"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "True or false: in the context of the displayed code, else, if present, has to come right after the except portion of the try/except block?",
+        "code": "a = float(input(\"Enter a number. \"))\nb = float(input(\"Enter a number. \"))\n\ntry:\n        print(f\"The answer is {a/b}. \")\nexcept:\n        print(\"This did not work. Did you try to divide by zero?\")\nelse:\n        print(\"Calculation completed successfully\")",
+        "options": [
+            "True",
+            "False"
+        ],
+        "answer": [
+            "True"
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which punctuation symbol should be used to combine strings and numbers in a print statement?",
+        "code": "",
+        "options": [
+            ",",
+            "&",
+            "+",
+            "()",
+            "@"
+        ],
+        "answer": [
+            ","
+        ]
+    },
+    {
+        "type": "singleChoice",
+        "question": "Which is the output of the following?",
+        "code": "x = 'abcd'\n\nfor i in range(len(x)):\n        x = 'a'\n        print(x, end = \" \")",
+        "options": [
+            "a",
+            "none of the others",
+            "abcd abcd abcd abcd",
+            "a a a a"
+        ],
+        "answer": [
+            "a a a a"
+        ]
+    }
+]
