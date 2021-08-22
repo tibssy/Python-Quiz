@@ -156,6 +156,7 @@ class PythonQuizApp(App):
             self.score += self.rate
             if not int(self.rate):
                 self.add_to_scroll()
+            self.your_answer = []
 
     def add_to_scroll(self):
         scroll_container = Factory.DynamicGrid()
