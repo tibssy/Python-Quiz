@@ -187,7 +187,8 @@ class PythonQuizApp(App):
         self.root.ids.num_lbl.text = f'Marks:\n[b]{round(self.score, 2) if self.score % 1 else int(self.score)}/{self.number_of_question}[/b]'
         self.root.ids.grd_lbl.text = f'{grade}%'
         self.root.ids.rslt_lbl.text = '[b][color=00ff00]PASS[/color][/b]' if grade >= 80 else '[b][color=ff0000]FAIL[/color][/b]'
-        self.root.ids.hdr_lbl.text = f'Incorrect Answers: [b]{int(self.number_of_question - self.score)}[/b]'
+        self.root.ids.hdr_lbl.text = f'Incorrect Answers: [b]{len(self.root.ids.scrll_grd.children)}[/b]'
+
 
     def on_start(self):
         self.statusbar()
