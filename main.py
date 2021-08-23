@@ -152,7 +152,7 @@ class PythonQuizApp(App):
 
     def rating(self):
         if len(self.selected_question) != 0:
-            self.rate = len(self.your_answer) / len(self.correct_answer) if math.prod([int(i in self.correct_answer) for i in self.your_answer]) else 0
+            self.rate = len(self.your_answer) / len(self.correct_answer) if all([i in self.correct_answer for i in self.your_answer]) else 0
             self.score += self.rate
             if not int(self.rate):
                 self.add_to_scroll()
